@@ -1,10 +1,15 @@
 import React from 'react'
+import { MainLayout, Navbar } from '../../components'
 import './home.css'
+
 type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <div>Home</div>
+    <>
+      <Navbar/>
+      <MainLayout/>
+    </>
   )
 }
 

@@ -6,15 +6,32 @@
   --color-golden: #ECBA60;
   --color-red: #D70D0D;
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
-
 a {
   color: unset;
   text-decoration: none;
+}
+body {
+  background-color: #111;
+}
+.d-flex {
+  display: flex;
+}
+.cod__iconic-btn {
+  transition: all .4s ease;
+}
+.cod__iconic-btn a {
+  transition: all .4s ease;
+}
+.cod__iconic-btn:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.cod__iconic-btn:hover a {
+  color: #fff;
 }
