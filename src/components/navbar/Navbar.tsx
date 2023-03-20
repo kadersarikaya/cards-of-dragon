@@ -44,9 +44,9 @@ const Navbar = (props: Props) => {
                   </button>
                   <div className={toggleMenu ? `cod__navbar-menu-links cod__open` : `cod__navbar-menu-links` }>
                     <ul className='cod__navbar-menu-links__ul'>
-                      <li><Link to='/'><a className={currentPath === "/" ?`red`: ``} href="/">HOME</a></Link></li>
-                      <li><Link to='/story'><a className={currentPath === "/story" ?`red`: ``} href="/">STORY</a></Link></li>
-                      <li><Link to='/rules'><a className={currentPath === "/rules" ?`red`: ``} href="/">RULES</a></Link></li>
+                      <li><Link to='/'><a className={currentPath === "/" ?`red`: ``} href="">HOME</a></Link></li>
+                      <li><Link to='/story'><a className={currentPath === "/story" ?`red`: ``} href="">STORY</a></Link></li>
+                      <li><Link to='/rules'><a className={currentPath === "/rules" ?`red`: ``} href="">RULES</a></Link></li>
                     </ul>
                     <div className="cod__navbar-identity-panel">
                       <div className="cod__navbar-panel-title">
