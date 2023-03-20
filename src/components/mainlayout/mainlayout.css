@@ -58,6 +58,7 @@
 .cod__slogan-section {
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 .cod__slogan-container {
     max-width: 1140px;
