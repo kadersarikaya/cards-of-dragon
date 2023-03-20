@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 :root {
   --font-odibee: 'Odibee Sans', cursive;
   --font-oswald: 'Oswald', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
   --color-golden: #ECBA60;
   --color-red: #D70D0D;
 }
@@ -18,20 +18,18 @@ a {
 }
 body {
   background-color: #111;
+      line-height: 1.5;
 }
 .d-flex {
   display: flex;
 }
-.cod__iconic-btn {
-  transition: all .4s ease;
-}
-.cod__iconic-btn a {
-  transition: all .4s ease;
-}
-.cod__iconic-btn:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-}
-.cod__iconic-btn:hover a {
-  color: #fff;
+.cod__bg-overlay {
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
 }

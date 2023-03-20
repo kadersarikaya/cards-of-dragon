@@ -1,17 +1,36 @@
 .cod__iconic-btn {
-    padding: 15px 80px;
+    width: auto;
+    max-width: 100%;
+    position: relative;
+    transition: all .4s ease;
+}
+.cod__iconic-btn-container {
+    text-align: center;
+}
+.cod__iconic-btn-container a {
+    padding: 15px 80px 15px 80px;
     font-family: var(--font-oswald);
     font-size: 18px;
     font-weight: 600;
-    font-style: normal;
     letter-spacing: 2px;
     color: var(--color-golden);
     background-color: #02010100;
-    background-image: url(
-        https://i0.wp.com/cardsofdragon.com/wp-content/uploads/2023/02/red_box-1.png?fit=641%2C225&ssl=1
-    );
+    background-image: url(https://i0.wp.com/cardsofdragon.com/wp-content/uploads/2023/02/red_box-1.png?fit=641%2C225&ssl=1);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    border-style: none;
+    transition: all .4s ease;
+}
+.cod__iconic-btn:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.cod__iconic-btn:hover a {
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .cod__iconic-btn-container a {
+        font-size:12px;
+        letter-spacing: 2px;
+    }
 }

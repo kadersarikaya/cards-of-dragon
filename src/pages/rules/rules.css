@@ -1,0 +1,205 @@
+.cod__rules {
+    padding: 100px 1px 100px 1px;
+    position: relative;
+}
+
+.cod__rules-overlay {
+    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/red_background-scaled.webp?fit=2560%2C961&ssl=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.cod__rules-container {
+    max-width: 1140px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.cod__rules-wrapper {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+
+.cod__rules-navigation {
+    text-align: center;
+    color: var(--color-red);
+    font-family: var(--font-oswald);
+    width: 100%;
+    position: relative;
+}
+.cod__rules-bg-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.5;
+    }
+
+.cod__rules-links {
+    text-align: center;
+    color: var(--color-red);
+    font-family: var(--font-oswald);
+    font-size: 16px;
+}
+
+.cod__rules-links a {
+    color: #f0f0f0;
+    font-family: var(--font-oswald);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+.cod__rules-links a:hover {
+    color: var(--color-red) ;
+}
+.cod__subheading-title__big {
+    color: #fff;
+    font-family: var(--font-odibee);
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 1em;
+    letter-spacing: 3px;
+}
+
+.cod__rules-list {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: visible;
+    position: relative;
+}
+
+.cod__rules-list-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 1140px;
+}
+
+.cod__rules-list-wrapper {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+
+.cod__rules-desc {
+    color: #f0f0f0;
+    font-family: var(--font-oswald);
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+}
+
+.cod__rules-desc-container {
+    color: #f0f0f0;
+    font-family: var(--font-oswald);
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;   
+}
+.cod__rules-desc-container ul {
+    list-style-type: disc;
+}
+
+.cod__rules__ul {
+    color: #f0f0f0;
+    font-family: var(--font-oswald);
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.cod__rules__list {
+    text-align: left;
+}
+
+
+
+@media (min-width: 768px) {
+    .cod__rules-wrapper {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .cod__rules-list-wrapper {
+        width: 100%;
+    }
+    .cod__rules-container {
+        max-width: 767px;
+    }
+    .cod__rules__ul,
+     .cod__rules__list {
+        line-height: 1.3em;
+        letter-spacing: 2px;
+    }
+
+    .cod__rules-wrapper {
+        width: 100%;
+    }
+
+    .cod__rules-navigation {
+        font-size: 16px;
+    }
+
+    .cod__rules-links {
+        font-size: 16px;
+    }
+    .cod__subheading-title__big {
+        font-size:35px;
+        line-height: 1em;
+        letter-spacing: 3px;
+    }
+    .cod__rules-list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cod__rules-list-container {
+        max-width: 767px;
+    }
+    .cod__rules-list-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cod__rules-container {
+        flex-wrap: wrap;
+    }
+
+    .cod__rules-list-container {
+        max-width: 1024px;
+        flex-wrap: wrap;
+    }
+    .cod__rules__ul {
+        line-height: 1.3em;
+        letter-spacing: 2px;
+    }
+    .cod__rules__list {
+        line-height: 1.3em;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+}

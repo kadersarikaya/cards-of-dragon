@@ -1,6 +1,11 @@
 import React from 'react'
 import { Button, Subheading } from '../../components';
 import './mainlayout.css'
+import '../../components/subheading/subheading.css'
+import '../../components/button/button.css'
+import {motion} from 'framer-motion';
+import Tilt from 'react-parallax-tilt';
+
 type Props = {}
 
 const MainLayout = (props: Props) => {
@@ -9,60 +14,167 @@ const MainLayout = (props: Props) => {
         <section className='cod__hero' >
             <div className="cod__hero-video">
                 <video className='cod__hero-video__src' src="https://cardsofdragon.com//wp-content//uploads//2023//02//dragonmainpage.mp4" autoPlay loop muted></video>
-                <div className="cod__hero-content">
-                    <div className="cod__hero-txt">
-                        <Subheading 
-                        isFirst={true}
-                        subheadTitle={'CARDS OF DRAGON'}
-                        subheadDesc={"THE PRICELESS TREASURE FROM THE DRAGON'S CAVE: FIND THE EGG, ESCAPE FROM THE DRAGON"} 
-                        />
-                        <div className="cod__hero-btns d-flex">
-                            <Button buttonName={'WITHDRAW'} />
-                            <Button buttonName={'DEPOSIT'} />
+            </div>
+            <div className="cod__hero-content">
+                <motion.div 
+                initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}
+                className="cod__hero-txt">
+                   <div className="cod__subheading cs__important">
+                        <div className="cod__subheading-title">
+                            <div className="cod__subheading-title-container">
+                            <h1 className='cod__subheading-title__first'>CARDS OF DRAGON</h1>
+                            </div>
+                        </div>
+                        <div className="cod__subheading-divider">
+                            <div className="cod__subheading-divider-container">
+                            <div className="cod__subheading-divider-wrapper">
+                                <span></span>
+                            </div>
+                            </div>
+                        </div>
+                        <div className="cod__subheading-desc">
+                            <div className="cod__subheading-desc-container">
+                                <h2>THE PRICELESS TREASURE FROM THE DRAGON'S CAVE: FIND THE EGG, ESCAPE FROM THE DRAGON</h2>
+                            </div>
+                        </div>
+                        <div className="cod__iconic-btns">
+                            <div className="cod__iconic-btn">
+                            <div className="cod__iconic-btn-container">
+                                <a href="/#" >WITHDRAW</a>
+                            </div>
+                        </div>
+                        <div className="cod__iconic-btn">
+                            <div className="cod__iconic-btn-container">
+                                <a href="/#" >DEPOSIT</a>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
-        <section className="cod__intro">
-            <div className="cod__intro-background-overlay bg-overlay"></div>
-            <div className="cod__intro-content">
-                <Subheading  
-                subheadTitle={'MOST PRECIOUS TREASURE'}
-                subheadDesc={"A THRILLING ADVENTURE FILLED WITH DANGER AND EXCITEMENT TO FIND THE DRAGON'S EGG"}
-                />
+        {/* 1 */}
+        <section className="cod__slogan-section cod__slogan__1">
+            <div className="cod__bg-overlay bg-overlay-1"></div>
+            <div className="cod__slogan-container">
+                <motion.div className="cod__slogan-wrapper" 
+                initial={{opacity:0, y: 100}}  
+                 whileInView={{opacity:1, y:0}} transition={{duration: 1}}>
+                    <Subheading 
+                    subheadDesc="A THRILLING ADVENTURE FILLED WITH DANGER AND EXCITEMENT TO FIND THE DRAGON'S EGG" 
+                    subheadTitle='MOST PRECIOUS TREASURE' />
+                </motion.div>
             </div>
         </section>
-        <section className="cod__parallax">
-            <div className="cod__parallax-background-overlay">
-                <div className="cod__parallax-content">
-                    <div className="cod__parallax-wrapper">
-                        <div className='cod__parallax-container '>
-                            <div className="cod__parallax-img">
+        <section className='cod__dragon-egg'>
+            <div className="cod__dragon-egg-container">
+                <motion.div className="cod__dragon-egg-wrapper" 
+                initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}>
+                    <div className="cod__dragon-egg-content">
+                        <div className="cod__dragon-egg-layout">
+                            <div className="cod__dragon-egg-img">
                                 <img width={2121} height={550} src="https://i0.wp.com/cardsofdragon.com/wp-content/uploads/2023/02/egg.png?resize=1024%2C266&ssl=1" alt="" />
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
-        <section className="cod__story">
-            <div className="cod__story-dragon-img">
+        {/* 2 */}
+        <section className="cod__slogan-section cod__same">
+            <div className="cod__slogan-dragon-img">
                 <img src="https://cardsofdragon.com/wp-content/uploads/2023/02/flying_dragon.webp" alt="" />
             </div>
-            <div className="cod__story-bg-overlay bg-overlay"></div>
-            <div className="cod__story-container">
-                <div className="cod__story-content-wrap">
-                    <div className="cod__story-content">
-                        <Subheading
-                        subheadTitle={'THE TERRIBLE DRAGON OF THE MOUNTAIN TOPS'}
-                        subheadDesc={`IN A CAVE HIGH ATOP THE MOUNTAINS LIVED A FEARSOME 
-                        DRAGON. THE DRAGON WOULD OFTEN FLY TO THE NEARBY VILLAGE AND 
-                        BREATHE FIRE, BURNING HOMES AND CAUSING GREAT HARM TO CROPS AND PEOPLE. 
-                        THE VILLAGERS WERE AFRAID OF THE DRAGON AND DECIDED TO TAKE ACTION BY 
-                        FORMING A GROUP OF BRAVE WARRIORS AND SETTING OUT TO STEAL ITS EGGS IN 
-                        THE HOPES OF STOPPING ITS ATTACKS.`}
-                        />
+            <div className="cod__bg-overlay bg-overlay-2"></div>
+            <div className="cod__slogan-container">
+                <motion.div className="cod__slogan-wrapper"
+                initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}>
+                    <Subheading
+                    subheadTitle='THE TERRIBLE DRAGON OF THE MOUNTAIN TOPS'
+                    subheadDesc="IN A CAVE HIGH ATOP THE MOUNTAINS LIVED A 
+                    FEARSOME DRAGON. THE DRAGON WOULD OFTEN FLY TO THE NEARBY 
+                    VILLAGE AND BREATHE FIRE, BURNING HOMES AND CAUSING GREAT 
+                    HARM TO CROPS AND PEOPLE. THE VILLAGERS WERE AFRAID OF THE 
+                    DRAGON AND DECIDED TO TAKE ACTION BY FORMING A GROUP OF BRAVE 
+                    WARRIORS AND SETTING OUT TO STEAL ITS EGGS IN THE HOPES OF 
+                    STOPPING ITS ATTACKS."
+                    />
+                </motion.div>
+            </div>
+        </section>
+        {/* 3 */}
+        <section className="cod__slogan-section cod__same">
+            <div className="cod__bg-overlay bg-overlay-3"></div>
+            <div className="cod__slogan-container">
+                <motion.div initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}
+                className="cod__slogan-wrapper">
+                    <Subheading
+                    subheadTitle='THE FIRE-BREATHING DRAGON THREATENING THE VILLAGE'
+                    subheadDesc="A DRAGON USED TO FLY FREQUENTLY TO THE NEARBY VILLAGE, 
+                    WHERE IT WOULD UNLEASH FIRE AND BURN DOWN HOUSES AND CROPS, CAUSING
+                     GREAT HARM TO PEOPLE AND THE LAND. THE VILLAGERS WERE ALARMED BY 
+                     THIS DANGEROUS SITUATION AND DECIDED TO TAKE ACTION TO FIND A 
+                     SOLUTION."
+                    />
+                </motion.div>
+            </div>
+        </section>
+        {/* 4 */}
+        <section className="cod__slogan-section cod__same">
+            <div className="cod__bg-overlay bg-overlay-4"></div>
+            <div className="cod__slogan-container">
+                <motion.div className="cod__slogan-wrapper"
+                initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}>
+                    <Subheading
+                    subheadTitle="BRAVE WARRIORS SET OUT TO STEAL DRAGON'S EGGS"
+                    subheadDesc="THE VILLAGERS FORMED A GROUP OF BRAVE WARRIORS AND 
+                    EMBARKED ON A JOURNEY TO THE DRAGON'S CAVE WITH THE GOAL OF STEALING 
+                    ITS EGGS. THEY HOPED THAT BY TAKING THE EGGS, THEY WOULD BE ABLE TO PUT 
+                    A STOP TO THE DRAGON'S DESTRUCTIVE ACTIONS AND ENSURE THE SAFETY OF THEIR VILLAGE."
+                    />
+                </motion.div>
+            </div>
+        </section>
+        {/* 5 */}
+        <section className="cod__slogan-section cod__same">
+            <div className="cod__bg-overlay bg-overlay-5"></div>
+            <div className="cod__slogan-container">
+                <motion.div className="cod__slogan-wrapper" 
+                initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}>
+                    <Subheading
+                    subheadTitle="WIN OR LOSE"
+                    subheadDesc="FIND THE CARD HIDING EGG AND HAVE THE PROSPERITY OR LOSE BY FINDING THE DRAGON CARD."
+                    />
+                </motion.div>
+            </div>
+        </section>
+        {/* 6 */}
+        <section className="cod__slogan-section cod__slogan__6">
+            <div className="cod__bg-overlay bg-overlay-6"></div>
+            <div className="cod__slogan-container">
+                <motion.div className="cod__slogan-wrapper"
+                initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{duration: 1}}>
+                    <Subheading
+                    subheadTitle="CHALLENGE YOUR LIMITS AND WIN: CARDS OF DRAGON"
+                    subheadDesc='THE STAKES ARE HIGH, BUT THE REWARDS ARE EVEN GREATER. WILL YOU RISE TO THE CHALLENGE AND CLAIM VICTORY? FIND OUT BY PLAYING "CARDS OF DRAGON" TODAY!'
+                    />
+                    <div className="mt-20">
+                        <Button buttonName="PLAY" />
+                    </div>
+                </motion.div>
+            </div>
+        </section>
+        <section className="cod__mouse-based-layout">
+            <div className="cod-mouse-based-layout__container">
+                <div className="cod-mouse-based-layout__wrapper">
+                    <div className="cod-mouse-based-layout__content">
+                        <div className="cod-mouse-based-layout__layout">
+                            <div className="cod-mouse-based-layout__img">
+                                <Tilt>
+                                    <img width={1577} height={"1444"} src="https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/dragoncards.webp?resize=1024%2C938&ssl=1" alt="" />
+                                </Tilt>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

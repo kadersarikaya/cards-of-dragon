@@ -4,15 +4,17 @@ import './button.css'
 type IProps = {
   buttonName: string;
   buttonLink?: string;
+  onClick?: () => void;
 }
 
-const Button:React.FC<IProps> = ({buttonName, buttonLink}) => {
+const Button:React.FC<IProps> = ({buttonName, buttonLink, onClick}) => {
   return (
     <div className="cod__iconic-btn">
-      <a href={buttonLink} className='' >
-        {buttonName}
-      </a>
+      <div className="cod__iconic-btn-container">
+        <a href={buttonLink} onClick={onClick}>{buttonName}</a>
+      </div>
     </div>
+
   )
 }
 

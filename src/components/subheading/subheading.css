@@ -1,57 +1,88 @@
-.cod__subheading-content {
+.cod__subheading {
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
-.cod__subheading-title__first {
-    font-size: 84px;
-    font-style: normal;
-    letter-spacing: 3px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .cod__subheading-title {
-    font-size: 60px;
-    letter-spacing: 1px;
-}
-.cod__subheading-content h1{
-    color: #fff;
     text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    animation-name: fadeInUp;
+    animation-duration: 1.25s;
+    position: relative;
+}
+.cod__subheading-title-container {
+    text-align: center;
+}
+.cod__subheading-title__first{
+    color: #fff;
     font-family: var(--font-odibee);
     font-weight: bold;
+    font-size: 84px;
     line-height: 1em;
+    letter-spacing: 3px;
 }
-.cod__subheading__divider {
-    text-align: center;
-    display: flex;
+.cod__subheading-title__base{
+    color: #fff;
+    font-family: var(--font-odibee);
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1em;
+    letter-spacing: 1px;
+}
+.cod__subheading-divider{ 
     color: var(--color-red);
-    width: 100px;
-    margin: 1.5rem auto;
+    border-width: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+    animation-duration: 1.25s;
+    position: relative;
+}
+.cod__subheading-divider-wrapper {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex; 
+    color: var(--color-red); 
+}
+.cod__subheading-divider-wrapper span {
     border-top: 3px solid var(--color-red);
-} 
-.cod__subheading-description{
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+.cod__subheading-desc {
+    text-align: center;
+    width: 100%;
+    animation-duration: 1.25s;
+    position: relative;
+}
+.cod__subheading-desc-container {
+    text-align: center;
+}
+.cod__subheading-desc-container h2 {
     color: #fff;
     font-family: var(--font-oswald);
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 2px;
-    font-style: normal;
-    line-height: 1.5em;
     text-align: center;
 }
-/**ANIMATION**/
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
 
-    100% {
-        opacity: 1;
-        transform: none;
+/**ANIMATION**/
+
+/******** RESPONSIVE *********/
+@media screen and (max-width: 767px) {
+    .cod__subheading-title__base {
+        font-size: 24px;
+        line-height: 1em;
+        letter-spacing: 1px;
+    }
+    .cod__subheading-desc-container h2 {
+        font-size: 14px;
     }
 }
-/******** RESPONSIVE *********/
-@media screen and (min-width: 2000px) {}
-@media screen and (max-width: 1440px) {}
-@media screen and (max-width: 1024px) {}
-@media screen and (max-width: 767px) {}
