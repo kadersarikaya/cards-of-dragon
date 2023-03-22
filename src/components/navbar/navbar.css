@@ -369,7 +369,7 @@
 }
 @media (max-width: 1024px) and (min-width: 768px) {
     .cod__navbar-menu {
-        width: 50%;
+        width: 70%;
     }
     .cod__navbar-menu-overlay {
         width: 30%;
