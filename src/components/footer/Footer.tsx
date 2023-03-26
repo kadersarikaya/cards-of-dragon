@@ -59,7 +59,6 @@ const Footer = (props: Props) => {
                         <div className="cod__footer-social-icons">
                           <ul className='cod__footer-social-icons-list'>
                             <li><a target="blank" href="https://twitter.com/cardsofdragon"><FaTwitter size={24} /></a></li>
-                            <li><a target="blank" href="https://www.linkedin.com/company/castrumistanbul/"><FaLinkedinIn size={27} /></a></li>
                           </ul>
                         </div>
                       </div>

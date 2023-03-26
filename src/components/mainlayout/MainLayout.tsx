@@ -38,12 +38,12 @@ const MainLayout = (props: Props) => {
                             </div>
                         </div>
                         <div className="cod__iconic-btns">
-                            <div className="cod__iconic-btn">
+                            <div className="cod__iconic-btn cod__btn-mt">
                             <div className="cod__iconic-btn-container">
                                 <a href="/#" >WITHDRAW</a>
                             </div>
                         </div>
-                        <div className="cod__iconic-btn">
+                        <div className="cod__iconic-btn cod__btn-mt">
                             <div className="cod__iconic-btn-container">
                                 <a href="/#" >DEPOSIT</a>
                             </div>
@@ -170,7 +170,7 @@ const MainLayout = (props: Props) => {
                     <div className="cod-mouse-based-layout__content">
                         <div className="cod-mouse-based-layout__layout">
                             <div className="cod-mouse-based-layout__img">
-                                <Tilt>
+                                <Tilt transitionSpeed={5500}>
                                     <img width={1577} height={"1444"} src="https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/dragoncards.webp?resize=1024%2C938&ssl=1" alt="" />
                                 </Tilt>
                             </div>

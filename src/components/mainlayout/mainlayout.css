@@ -52,7 +52,7 @@
 .cod__slogan-section {
     height: 100vh;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .cod__slogan-container {
     max-width: 1140px;
@@ -207,6 +207,9 @@
     max-width: 100%;
         
 }
+.cod__btn-mt {
+    margin-top: 30px;
+}
 /*Animations*/
 
 @keyframes ekit-left-right {
@@ -241,10 +244,6 @@
     .cod__iconic-btns {
         margin:0px;
         display: block;
-        
-    }
-    .cod__iconic-btn {
-        margin-top: 30px;
     }
 }
 @media screen and (max-width: 767px) {

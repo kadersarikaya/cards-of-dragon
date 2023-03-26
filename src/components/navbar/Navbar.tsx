@@ -24,11 +24,15 @@ const Navbar = (props: Props) => {
         <div className="cod__navbar-logo-wrapper">
           <div className="cod__navbar-logo">
             <div className="cod__navbar-logo-container">
-              <Link  to='/'>
-                <a>
-                  <img width={240} height={212} src={logo} alt="" />
-                </a>
-              </Link>
+              <div className='cod__navbar-logo__img'>
+               <div className="">
+                <Link  to='/'>
+                  <a>
+                    <img width={240} height={212} src={logo} alt="" />
+                  </a>
+                </Link>
+               </div>
+              </div>
             </div>
           </div>
         </div>
