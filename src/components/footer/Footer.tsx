@@ -36,17 +36,17 @@ const Footer = (props: Props) => {
                      </div>
                       <div className="cod__footer-navigation-link">
                         <div className="cod__footer__link">
-                         <a href='cardsofdragon.com/' ><h5>HOME</h5></a>
+                         <a href='https://cardsofdragon.com/' ><h5>HOME</h5></a>
                         </div>
                       </div>
                       <div className="cod__footer-navigation-link">
                         <div className="cod__footer__link">
-                          <a href='cardsofdragon.com/story'><h5>STORY</h5></a>
+                          <a href='https://cardsofdragon.com/story'><h5>STORY</h5></a>
                         </div>
                        </div>
                         <div className="cod__footer-navigation-link">
                          <div className="cod__footer__link">
-                           <a href="cardsofdragon.com/rules"><h5>RULES</h5></a>
+                           <a href="https://cardsofdragon.com/rules"><h5>RULES</h5></a>
                           </div>
                          </div>
                         </div>
