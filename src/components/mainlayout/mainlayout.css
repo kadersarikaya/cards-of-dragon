@@ -86,7 +86,7 @@
     max-width: 100%;
 }
 .cod__dragon-egg{
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/background1.webp?fit=2121%2C550&ssl=1);
+    background-image: url('../../assets/Lav.png');
     background-position: center center;
     background-size: cover;
     margin-top: -200px;
@@ -135,31 +135,31 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #111;
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/red_background-scaled.webp?fit=2560%2C961&ssl=1);
+    background-image: url('../../assets/section_bg.png');
 }
 .bg-overlay-2 {
     background-size: contain;
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/mountain.webp?fit=1400%2C600&ssl=1);
+    background-image: url('');
 
 }
 .bg-overlay-3 {
     background-size: contain;
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/dragon_village.webp?fit=1100%2C1100&ssl=1);
+    background-image: url('../../assets/dragon_village.png');
 
 }
 .bg-overlay-4 {
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/cave.webp?fit=1100%2C1100&ssl=1);
+    background-image: url('../../assets/cave.png');
     background-size: contain;
 
 }
 .bg-overlay-5 {
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/dragon_dragonsegg.webp?fit=1100%2C1100&ssl=1);
+    background-image: url('../../assets/dragon_dragonsegg.png');
     background-size: contain;
 }
 .bg-overlay-6 {
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/red_background-scaled.webp?fit=2560%2C961&ssl=1);
+    background-image: url('../../assets/section_bg.png');
     background-size: cover;
 }
 .cod__mouse-based-layout {
@@ -209,6 +209,9 @@
 }
 .cod__btn-mt {
     margin-top: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
 }
 /*Animations*/
 

@@ -131,11 +131,6 @@ const Navbar = (props: Props) => {
         </div>
         <div className="cod__navbar-btn">
           <div className="cod__navbar-btn-container">
-            <Button buttonName="PLAY" />
-          </div>
-        </div>
-        <div className="cod__navbar-btn">
-          <div className="cod__navbar-btn-container">
             <Button
               onClick={handleClick}
               buttonName={

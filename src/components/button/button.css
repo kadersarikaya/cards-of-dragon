@@ -15,7 +15,7 @@
     letter-spacing: 2px;
     color: var(--color-golden);
     background-color: #02010100;
-    background-image: url(https://i0.wp.com/cardsofdragon.com/wp-content/uploads/2023/02/red_box-1.png?fit=641%2C225&ssl=1);
+    background-image: url('../../assets/red_box.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

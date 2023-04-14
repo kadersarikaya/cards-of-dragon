@@ -79,7 +79,7 @@ const Footer = (props: Props) => {
                   <h6 className='cod__copyright__h6' >
                     Copyright ©
                     <span>
-                    <span>Cards of Dragon</span>
+                    <span> Cards of Dragon</span>
                     </span>
                     . All Right Reserved.
                    </h6>

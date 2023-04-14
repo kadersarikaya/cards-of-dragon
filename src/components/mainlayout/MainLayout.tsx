@@ -1,11 +1,14 @@
-import React from 'react'
+import React  from 'react'
 import { Button, Subheading } from '../../components';
 import './mainlayout.css'
 import '../../components/subheading/subheading.css'
 import '../../components/button/button.css'
 import {motion} from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-
+import Video from '../../assets/dragonmainpage.mp4'
+import egg from '../../assets/egg.png'
+import FlyingDragon from '../../assets/flying_dragon.png'
+import DragonCard from '../../assets/dragoncards.png'
 type Props = {}
 
 const MainLayout = (props: Props) => {
@@ -13,7 +16,7 @@ const MainLayout = (props: Props) => {
     <div className='cod__main-layout'>
         <section className='cod__hero' >
             <div className="cod__hero-video">
-                <video className='cod__hero-video__src' src="https://cardsofdragon.com//wp-content//uploads//2023//02//dragonmainpage.mp4" autoPlay loop muted></video>
+                <video className='cod__hero-video__src' src={Video} autoPlay loop muted></video>
             </div>
             <div className="cod__hero-content">
                 <motion.div 
@@ -73,7 +76,7 @@ const MainLayout = (props: Props) => {
                     <div className="cod__dragon-egg-content">
                         <div className="cod__dragon-egg-layout">
                             <div className="cod__dragon-egg-img">
-                                <img width={2121} height={550} src="https://i0.wp.com/cardsofdragon.com/wp-content/uploads/2023/02/egg.png?resize=1024%2C266&ssl=1" alt="" />
+                                <img width={2121} height={550} src={egg} alt="" />
                             </div>
                         </div>
                     </div>
@@ -83,7 +86,7 @@ const MainLayout = (props: Props) => {
         {/* 2 */}
         <section className="cod__slogan-section cod__same">
             <div className="cod__slogan-dragon-img">
-                <img src="https://cardsofdragon.com/wp-content/uploads/2023/02/flying_dragon.webp" alt="" />
+                <img src={FlyingDragon} alt="" />
             </div>
             <div className="cod__bg-overlay bg-overlay-2"></div>
             <div className="cod__slogan-container">
@@ -171,7 +174,7 @@ const MainLayout = (props: Props) => {
                         <div className="cod-mouse-based-layout__layout">
                             <div className="cod-mouse-based-layout__img">
                                 <Tilt transitionSpeed={5500}>
-                                    <img width={1577} height={"1444"} src="https://i0.wp.com/km21c6.n3cdn1.secureserver.net/wp-content/uploads/2023/02/dragoncards.webp?resize=1024%2C938&ssl=1" alt="" />
+                                    <img width={1577} height={"1444"} src={DragonCard} alt="" />
                                 </Tilt>
                             </div>
                         </div>
