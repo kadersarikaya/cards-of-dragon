@@ -134,7 +134,9 @@ const Navbar = (props: Props) => {
             <Button
               onClick={handleClick}
               buttonName={
-                web3Context.web3 ? web3Context?.account : "Connect Wallet"
+                web3Context.web3 ? 
+                web3Context.account?.slice(0, 6) + "..." + web3Context.account?.slice(38, 42)
+                : "Connect Wallet"
               }
             />
           </div>
